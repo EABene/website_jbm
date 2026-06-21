@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============================================================= -->
+<!--  SEO  –  HIER später deine echte Domain & Daten eintragen     -->
+<!-- ============================================================= -->
+<title>Jauerlinger Bradlmusi – Tanzlmusi aus dem Waldviertel & der Wachau</title>
+<meta name="description" content="Die Jauerlinger Bradlmusi spielt echte, handgemachte Tanzlmusi vom Fuße des Jauerlings – für Heurige, Geburtstage, Bälle und Feste im Waldviertel und in der Wachau. Jetzt anfragen.">
+<meta name="keywords" content="Jauerlinger Bradlmusi, Tanzlmusi, Volksmusik, Waldviertel, Wachau, Jauerling, Bradlmusi, Heuriger, Bälle, Steirische Harmonika, Musikgruppe Niederösterreich">
+<meta name="author" content="Jauerlinger Bradlmusi">
+<link rel="canonical" href="https://www.jauerlinger-bradlmusi.at/">
+
+<!-- Open Graph (Facebook / WhatsApp Vorschau) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_AT">
+<meta property="og:title" content="Jauerlinger Bradlmusi – Tanzlmusi aus dem Waldviertel & der Wachau">
+<meta property="og:description" content="Echte, handgemachte Tanzlmusi vom Fuße des Jauerlings – für Heurige, Geburtstage, Bälle und Feste.">
+<meta property="og:url" content="https://www.jauerlinger-bradlmusi.at/">
+<!-- og:image: hier ein Foto (mind. 1200x630px) hochladen und URL eintragen -->
+<meta property="og:image" content="https://www.jauerlinger-bradlmusi.at/og-bild.jpg">
+
+<!-- Strukturierte Daten: sagt Google "das ist eine Musikgruppe" -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "name": "Jauerlinger Bradlmusi",
+  "genre": "Tanzlmusi",
+  "url": "https://www.jauerlinger-bradlmusi.at/",
+  "description": "Echte, handgemachte Tanzlmusi vom Fuße des Jauerlings.",
+  "foundingLocation": { "@type": "Place", "name": "Waldviertel / Wachau, Niederösterreich, Österreich" },
+  "areaServed": { "@type": "Place", "name": "Waldviertel und Wachau, Niederösterreich" },
+  "email": "kontakt@jauerlinger-bradlmusi.at",
+  "telephone": "+43 000 0000000"
+}
+</script>
+
+<!-- Favicon: schlichter Jauerling mit Sendemast (inline) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M2 25 C7 21 10 22 14 15 C16 11.5 18 11.5 20 15 C24 22 27 21 30 25 Z' fill='%232C5638'/%3E%3Cline x1='17' y1='13.5' x2='17' y2='6' stroke='%231F3A26' stroke-width='1.6'/%3E%3Ccircle cx='17' cy='5' r='1.7' fill='%23C0392B'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#FFFFFF;
+    --bg-alt:#F4F4F1;
+    --ink:#141414;
+    --ink-soft:#5C5B57;
+    --line:#E4E3DE;
+    --green:#2E7A45;
+    --green-deep:#215C34;
+    --white:#FFFFFF;
+
+    --maxw:1140px;
+    --pad:clamp(1.25rem, 5vw, 4rem);
+    --display:"Montserrat", system-ui, sans-serif;
+    --body:"Inter", system-ui, -apple-system, sans-serif;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);color:var(--ink);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:var(--display);line-height:1.08;letter-spacing:-.01em}
+  a{color:inherit}
+  img{max-width:100%;display:block}
+
+  .wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--pad)}
+
+  .eyebrow{
+    font-family:var(--display);font-weight:700;font-size:.74rem;
+    letter-spacing:.24em;text-transform:uppercase;color:var(--green);
+    display:inline-flex;align-items:center;gap:.6rem;
+  }
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--green)}
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex;align-items:center;gap:.55rem;
+    font-family:var(--display);font-weight:700;font-size:.84rem;letter-spacing:.04em;text-transform:uppercase;
+    padding:.9rem 1.7rem;border-radius:4px;text-decoration:none;cursor:pointer;border:2px solid transparent;
+    transition:transform .25s ease, background .25s ease, color .25s ease, border-color .25s ease, box-shadow .25s ease;
+  }
+  .btn-primary{background:var(--green);color:#fff}
+  .btn-primary:hover{background:var(--green-deep);transform:translateY(-2px);box-shadow:0 12px 24px -12px rgba(33,92,52,.7)}
+  .btn-ghost{border-color:var(--ink);color:var(--ink)}
+  .btn-ghost:hover{border-color:var(--green);color:var(--green);transform:translateY(-2px)}
+
+  /* ---------- Navigation ---------- */
+  header.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .35s ease, box-shadow .35s ease, padding .35s ease;padding:1.1rem 0}
+  header.nav.scrolled{background:rgba(255,255,255,.95);backdrop-filter:blur(8px);box-shadow:0 1px 0 var(--line);padding:.7rem 0}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:baseline;gap:.5rem;text-decoration:none;font-family:var(--display);letter-spacing:.08em}
+  .brand .b1{font-weight:800;font-size:1.02rem;color:var(--ink)}
+  .brand .b2{font-weight:600;font-size:.72rem;letter-spacing:.2em;color:var(--green)}
+  .nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+  .nav-links a{font-family:var(--display);text-decoration:none;font-weight:600;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);position:relative;padding:.2rem 0;transition:color .2s}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-3px;height:2px;width:0;background:var(--green);transition:width .25s ease}
+  .nav-links a:hover::after{width:100%}
+  .nav-links a:hover{color:var(--green)}
+
+  .burger{display:none;background:none;border:0;cursor:pointer;padding:.4rem;width:42px;height:42px}
+  .burger span{display:block;height:2px;width:24px;background:var(--ink);margin:5px auto;border-radius:2px;transition:.3s}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;
+    background:var(--bg);text-align:center;padding:clamp(7rem,15vh,10rem) 0 5rem;
+  }
+  .hero-inner{display:flex;flex-direction:column;align-items:center}
+  .hero-mtn{width:min(78vw,520px);margin-bottom:1.6rem}
+  .hero-mtn svg{width:100%;height:auto;display:block}
+  .wordmark{font-family:var(--display);display:flex;flex-direction:column;align-items:center;line-height:1}
+  .wordmark .wm1{font-weight:800;font-size:clamp(2.2rem,8vw,5rem);letter-spacing:.04em;color:var(--ink);text-transform:uppercase}
+  .wordmark .wm2{font-weight:600;font-size:clamp(.85rem,2.6vw,1.5rem);letter-spacing:.42em;text-transform:uppercase;color:var(--green);margin-top:.55rem;padding-left:.42em}
+  .hero .tagline{font-size:clamp(1.05rem,2.4vw,1.35rem);color:var(--ink-soft);margin:1.6rem 0 .7rem;max-width:30ch}
+  .hero .place{font-family:var(--display);font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:2rem;display:flex;gap:.6rem;justify-content:center;align-items:center;flex-wrap:wrap}
+  .hero .place span:nth-child(2){color:var(--green)}
+  .hero .cta{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+  .scrolldown{position:absolute;left:50%;bottom:1.4rem;transform:translateX(-50%);z-index:4;color:var(--ink-soft);font-family:var(--display);font-size:.66rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:.45rem;text-decoration:none}
+  .scrolldown .chev{width:14px;height:14px;border-right:2px solid var(--green);border-bottom:2px solid var(--green);transform:rotate(45deg);animation:bob 1.8s ease-in-out infinite}
+  @keyframes bob{0%,100%{transform:rotate(45deg) translate(0,0)}50%{transform:rotate(45deg) translate(3px,3px)}}
+
+  /* ---------- Gruppenfoto-Banner ---------- */
+  .bandphoto{padding-block:0}
+  .bandphoto .ph{aspect-ratio:21/9}
+  .bandphoto .ph .ph-sub{font-size:1.2rem}
+  @media(max-width:640px){ .bandphoto .ph{aspect-ratio:4/3} }
+
+  /* ---------- Zickzack-Trenner (Balg-Signature, dezent grün) ---------- */
+  .balg{width:100%;height:18px;display:block;color:var(--green);opacity:.9}
+  .balg svg{width:100%;height:100%}
+
+  /* ---------- Sections ---------- */
+  section{padding-block:clamp(4rem,9vw,7rem)}
+  .section-head{max-width:680px;margin-bottom:3rem}
+  .section-head h2{font-weight:800;font-size:clamp(1.9rem,4.2vw,2.9rem);margin:.8rem 0 1rem}
+  .section-head p{color:var(--ink-soft);font-size:1.06rem}
+
+  /* About */
+  .about{background:var(--bg)}
+  .about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+  .about-text h2{font-weight:800;font-size:clamp(1.9rem,4.2vw,2.9rem);margin:.8rem 0 1.3rem}
+  .about-text p{margin-bottom:1.1rem;font-size:1.06rem;color:#3a3934}
+  .about-text p:last-of-type{margin-bottom:0}
+  .occasions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.8rem}
+  .tag{font-family:var(--display);font-size:.76rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:.5rem 1rem;border-radius:999px;background:#fff;color:var(--green-deep);border:1.5px solid var(--green);}
+  .about-photo{aspect-ratio:4/5;border-radius:6px;overflow:hidden;position:relative;border:1px solid var(--line)}
+
+  /* Foto-Platzhalter (grau) */
+  .ph{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.7rem;color:#8A8983;text-align:center;padding:1rem;position:relative;background:linear-gradient(150deg,#ECECE8 0%, #DDDCD7 100%)}
+  .ph.alt1{background:linear-gradient(150deg,#EDEDE9,#DEDDD8)}
+  .ph.alt2{background:linear-gradient(150deg,#E8E8E3,#D7D6D0)}
+  .ph.alt3{background:linear-gradient(150deg,#EFEFEB,#E0DFDA)}
+  .ph .ph-ico{width:40px;height:40px;opacity:.7}
+  .ph .ph-label{font-family:var(--display);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;opacity:.85}
+  .ph .ph-sub{font-family:var(--display);font-weight:700;font-size:1rem;opacity:.9;color:#73726C}
+
+  /* Besetzung */
+  .members{background:var(--bg-alt)}
+  .member-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+  .member{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+  .member:hover{transform:translateY(-6px);border-color:var(--green);box-shadow:0 22px 40px -26px rgba(20,20,20,.35)}
+  .member .portrait{aspect-ratio:3/4}
+  .member .info{padding:1.1rem 1.2rem 1.3rem;border-top:2px solid var(--green)}
+  .member .info h3{font-weight:800;font-size:1.05rem;letter-spacing:.02em;color:var(--ink);margin-bottom:.25rem;text-transform:uppercase}
+  .member .info .role{font-family:var(--display);font-size:.82rem;color:var(--green-deep);font-weight:600;letter-spacing:.03em}
+
+  /* Galerie */
+  .gallery{background:var(--bg)}
+  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+  .g-item{border:1px solid var(--line);padding:0;cursor:pointer;border-radius:6px;overflow:hidden;aspect-ratio:1;position:relative;background:none;transition:transform .3s ease,border-color .3s ease}
+  .g-item:hover{border-color:var(--green)}
+  .g-item .ph{transition:transform .5s ease}
+  .g-item:hover .ph{transform:scale(1.05)}
+  .g-item::after{content:"Ansehen";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(20,20,20,.55);color:#fff;font-family:var(--display);font-weight:600;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;opacity:0;transition:opacity .3s ease}
+  .g-item:hover::after{opacity:1}
+
+  /* Kontakt */
+  .contact{background:var(--bg-alt)}
+  .contact .section-head{margin-inline:auto;text-align:center}
+  .contact .eyebrow{justify-content:center}
+  .contact-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;max-width:880px;margin:0 auto 2.2rem}
+  .c-card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:2rem 1.4rem;text-align:center;text-decoration:none;color:var(--ink);transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease;display:block}
+  .c-card:hover{transform:translateY(-5px);border-color:var(--green);box-shadow:0 20px 38px -26px rgba(20,20,20,.35)}
+  .c-card .c-ico{width:32px;height:32px;color:var(--green);margin:0 auto .9rem}
+  .c-card .c-label{font-family:var(--display);font-size:.7rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:.45rem}
+  .c-card .c-val{font-family:var(--display);font-size:1rem;font-weight:700;word-break:break-word}
+  .contact-note{text-align:center;font-family:var(--display);font-weight:600;font-size:1.05rem;color:var(--green-deep)}
+
+  /* Footer */
+  footer{background:var(--ink);color:rgba(255,255,255,.66);padding-block:2.8rem;text-align:center}
+  footer .f-brand{font-family:var(--display);font-weight:800;font-size:1.1rem;letter-spacing:.1em;text-transform:uppercase;color:#fff;margin-bottom:.35rem}
+  footer .f-brand span{color:var(--green);font-weight:600;font-size:.7rem;letter-spacing:.22em;margin-left:.4rem}
+  footer .f-place{font-family:var(--display);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:1.5rem}
+  footer .socials{display:flex;gap:1.2rem;justify-content:center;margin-bottom:1.5rem}
+  footer .socials a{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;color:#fff;transition:.3s}
+  footer .socials a:hover{border-color:var(--green);color:var(--green);transform:translateY(-3px)}
+  footer .copy{font-size:.78rem;opacity:.55}
+
+  /* ---------- Lightbox ---------- */
+  .lightbox{position:fixed;inset:0;z-index:100;background:rgba(12,12,12,.94);display:none;align-items:center;justify-content:center;padding:1.5rem}
+  .lightbox.open{display:flex}
+  .lb-stage{max-width:880px;width:100%;aspect-ratio:3/2;border-radius:6px;overflow:hidden;box-shadow:0 40px 80px -30px #000}
+  .lb-close{position:absolute;top:1.2rem;right:1.4rem;background:none;border:0;color:#fff;font-size:2.2rem;cursor:pointer;line-height:1;opacity:.8;transition:.2s}
+  .lb-close:hover{opacity:1;color:var(--green)}
+  .lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:none;border:0;color:#fff;font-size:2.6rem;cursor:pointer;padding:1rem;opacity:.65;transition:.2s}
+  .lb-nav:hover{opacity:1;color:var(--green)}
+  .lb-prev{left:.5rem}.lb-next{right:.5rem}
+
+  /* ---------- Reveal ---------- */
+  .reveal-enabled .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease, transform .7s ease}
+  .reveal-enabled .reveal.is-visible{opacity:1;transform:none}
+
+  /* ---------- Responsive ---------- */
+  @media(max-width:900px){
+    .about-grid{grid-template-columns:1fr}
+    .about-photo{max-width:420px}
+    .member-grid{grid-template-columns:repeat(2,1fr)}
+    .gallery-grid{grid-template-columns:repeat(2,1fr)}
+    .contact-cards{grid-template-columns:1fr;max-width:420px}
+  }
+  @media(max-width:640px){
+    .nav-links{position:fixed;inset:0 0 0 auto;width:min(78vw,320px);background:var(--ink);flex-direction:column;justify-content:center;gap:2.2rem;transform:translateX(100%);transition:transform .35s ease;box-shadow:-20px 0 60px rgba(0,0,0,.4)}
+    .nav-links.open{transform:translateX(0)}
+    .nav-links a{color:#fff;font-size:1rem}
+    .burger{display:block;z-index:60}
+    .gallery-grid{grid-template-columns:1fr}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;scroll-behavior:auto!important}
+    .reveal-enabled .reveal{opacity:1;transform:none;transition:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#hero" class="brand" aria-label="Jauerlinger Bradlmusi Startseite">
+      <span class="b1">JAUERLINGER</span><span class="b2">BRADLMUSI</span>
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Über uns</a></li>
+        <li><a href="#members">Besetzung</a></li>
+        <li><a href="#gallery">Galerie</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="hero">
+  <div class="wrap hero-inner reveal">
+
+    <!-- Der Jauerling: sanfter, bewaldeter Rücken mit Sendemast -->
+    <div class="hero-mtn" aria-hidden="true">
+      <svg viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
+        <!-- ferne Hügel (Tiefe, Grüntöne) -->
+        <path d="M0,170 C110,142 220,156 320,134 C420,113 520,150 600,140 L600,250 L0,250 Z" fill="#CBD8BD"/>
+        <path d="M0,192 C130,168 250,182 360,162 C470,143 545,176 600,170 L600,250 L0,250 Z" fill="#8AA770"/>
+        <!-- Jauerling-Hauptrücken (tiefes Waldgrün, sanft & breit) -->
+        <path d="M0,212 C90,200 165,206 235,182 C272,169 295,120 320,108 C347,121 372,178 442,198 C512,216 560,210 600,218 L600,250 L0,250 Z" fill="#2C5638"/>
+        <!-- bewaldeter Kamm (Tannen am Grat) -->
+        <g fill="#2C5638">
+          <path d="M243,182 l5,-17 l5,17 z"/>
+          <path d="M262,172 l5,-19 l5,19 z"/>
+          <path d="M281,160 l5,-20 l5,20 z"/>
+          <path d="M299,142 l5,-20 l5,20 z"/>
+          <path d="M337,150 l5,-20 l5,20 z"/>
+          <path d="M357,166 l5,-18 l5,18 z"/>
+          <path d="M377,178 l5,-16 l5,16 z"/>
+        </g>
+        <!-- ORF-Sendemast mittig -->
+        <path d="M315.5,109 L319,40 L321,40 L324.5,109 Z" fill="#1F3A26"/>
+        <g stroke="#1F3A26" stroke-width="1.2">
+          <line x1="316.6" y1="92" x2="323.4" y2="92"/>
+          <line x1="317.3" y1="74" x2="322.7" y2="74"/>
+          <line x1="318" y1="58" x2="322" y2="58"/>
+          <line x1="318.6" y1="46" x2="321.4" y2="46"/>
+        </g>
+        <line x1="320" y1="40" x2="320" y2="32" stroke="#1F3A26" stroke-width="1.2"/>
+        <circle cx="320" cy="30" r="6" fill="#C0392B" opacity=".25"/>
+        <circle cx="320" cy="30" r="2.6" fill="#C0392B"/>
+      </svg>
+    </div>
+
+    <h1 class="wordmark">
+      <span class="wm1">Jauerlinger</span>
+      <span class="wm2">Bradlmusi</span>
+    </h1>
+
+    <p class="tagline">Handgemachte Tanzlmusi vom Fuße des Jauerlings.</p>
+    <p class="place"><span>Waldviertel</span><span>/</span><span>Wachau</span></p>
+    <div class="cta">
+      <a href="#contact" class="btn btn-primary">Für dein Fest anfragen</a>
+      <a href="#about" class="btn btn-ghost">Wer wir sind</a>
+    </div>
+  </div>
+
+  <a href="#about" class="scrolldown" aria-label="Nach unten scrollen">
+    <span>Weiter</span><span class="chev"></span>
+  </a>
+</section>
+
+<!-- ===================== GRUPPENFOTO ===================== -->
+<section class="bandphoto reveal" id="gruppenfoto" aria-label="Gruppenfoto der Jauerlinger Bradlmusi">
+  <!-- ▼ FOTO: ersetze die .ph durch <img src="gruppe.jpg" alt="Die Jauerlinger Bradlmusi"> -->
+  <div class="ph alt2">
+    <svg class="ph-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="7.5" cy="8" r="2.6"/><circle cx="13.5" cy="7" r="2.2"/><circle cx="18.5" cy="9" r="2"/><path d="M2.5 19c0-2.6 2-4.6 5-4.6s5 2 5 4.6M12 19c.3-2.1 1.9-3.7 4-3.7s3.5 1.4 4 3.3"/></svg>
+    <span class="ph-sub">Gruppenfoto</span>
+    <span class="ph-label">Hier euer Foto einsetzen</span>
+  </div>
+</section>
+
+<div class="balg" aria-hidden="true">
+  <svg viewBox="0 0 1440 18" preserveAspectRatio="none"><path d="M0,18 L48,0 L96,18 L144,0 L192,18 L240,0 L288,18 L336,0 L384,18 L432,0 L480,18 L528,0 L576,18 L624,0 L672,18 L720,0 L768,18 L816,0 L864,18 L912,0 L960,18 L1008,0 L1056,18 L1104,0 L1152,18 L1200,0 L1248,18 L1296,0 L1344,18 L1392,0 L1440,18" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+</div>
+
+<!-- ===================== ÜBER UNS ===================== -->
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <span class="eyebrow">Über uns</span>
+        <h2>Echte Tanzlmusi aus dem Herzen der Wachau.</h2>
+        <!-- ▼ TEXT PERSONALISIEREN: eure Geschichte, woher, seit wann -->
+        <p>Die Jauerlinger Bradlmusi ist eine Handvoll Musikanten vom Fuße des Jauerlings. Wir spielen echte, handgemachte Tanzlmusi &ndash; bodenständig und ohne Halbplayback.</p>
+        <p>Ob beim Heurigen, beim Frühschoppen oder beim runden Geburtstag: Wir sorgen für die Stimmung, die einen Abend gemütlich macht. Von der zünftigen Polka bis zum gefühlvollen Walzer.</p>
+        <div class="occasions">
+          <span class="tag">Heurige</span>
+          <span class="tag">Geburtstage</span>
+          <span class="tag">Frühschoppen</span>
+          <span class="tag">Bälle</span>
+          <span class="tag">Zeltfeste</span>
+          <span class="tag">Feste &amp; Feiern</span>
+        </div>
+      </div>
+      <div class="about-photo reveal">
+        <!-- ▼ FOTO: <img src="band.jpg" alt="Die Jauerlinger Bradlmusi"> hier einsetzen -->
+        <div class="ph alt2">
+          <svg class="ph-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="7" r="3.2"/><circle cx="16" cy="9" r="2.6"/><path d="M3.5 20c0-3 2.5-5 5.5-5s5.5 2 5.5 5M13.5 20c.4-2.3 2.2-4 4.5-4s3.6 1.4 4 3.5"/></svg>
+          <span class="ph-sub">Foto vom Auftritt</span>
+          <span class="ph-label">Foto hier einfügen</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="balg" aria-hidden="true">
+  <svg viewBox="0 0 1440 18" preserveAspectRatio="none"><path d="M0,18 L48,0 L96,18 L144,0 L192,18 L240,0 L288,18 L336,0 L384,18 L432,0 L480,18 L528,0 L576,18 L624,0 L672,18 L720,0 L768,18 L816,0 L864,18 L912,0 L960,18 L1008,0 L1056,18 L1104,0 L1152,18 L1200,0 L1248,18 L1296,0 L1344,18 L1392,0 L1440,18" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+</div>
+
+<!-- ===================== BESETZUNG ===================== -->
+<section class="members" id="members">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Die Besetzung</span>
+      <h2>Sechs Musikanten und ihre Instrumente.</h2>
+      <p>Hinter jedem Instrument steht ein Gesicht &ndash; klick dich durch.</p>
+    </div>
+    <!-- ▼ NAMEN ANPASSEN. Portrait-Foto: <img> in .portrait einsetzen -->
+    <div class="member-grid">
+      <article class="member reveal">
+        <div class="portrait"><div class="ph alt1"><svg class="ph-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg><span class="ph-label">Foto</span></div></div>
+        <div class="info"><h3>Name eintragen</h3><span class="role">Flügelhorn</span></div>
+      </article>
+      <article class="member reveal">
+        <div class="portrait"><div class="ph alt2"><svg class="ph-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg><span class="ph-label">Foto</span></div></div>
+        <div class="info"><h3>Name eintragen</h3><span class="role">Flügelhorn</span></div>
+      </article>
+      <article class="member reveal">
+        <div class="portrait"><div class="ph alt3"><svg class="ph-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg><span class="ph-label">Foto</span></div></div>
+        <div class="info"><h3>Name eintragen</h3><span class="role">Posaune</span></div>
+      </article>
+      <article class="member reveal">
+        <div class="portrait"><div class="ph alt2"><svg class="ph-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg><span class="ph-label">Foto</span></div></div>
+        <div class="info"><h3>Name eintragen</h3><span class="role">Steirische Harmonika</span></div>
+      </article>
+      <article class="member reveal">
+        <div class="portrait"><div class="ph alt1"><svg class="ph-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg><span class="ph-label">Foto</span></div></div>
+        <div class="info"><h3>Name eintragen</h3><span class="role">Gitarre</span></div>
+      </article>
+      <article class="member reveal">
+        <div class="portrait"><div class="ph alt3"><svg class="ph-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg><span class="ph-label">Foto</span></div></div>
+        <div class="info"><h3>Name eintragen</h3><span class="role">Tuba</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GALERIE ===================== -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Galerie</span>
+      <h2>Ein paar Augenblicke vom Aufspielen.</h2>
+      <p>Klick auf ein Bild, um es größer zu sehen.</p>
+    </div>
+    <!-- ▼ Für echte Fotos: ersetze die innere .ph durch <img src="..." alt="..."> -->
+    <div class="gallery-grid reveal" id="galleryGrid">
+      <button class="g-item" aria-label="Foto vergrößern"><div class="ph alt1"><svg class="ph-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.6"/><path d="m3 17 5-4 4 3 3-2 6 4"/></svg><span class="ph-label">Foto 1</span></div></button>
+      <button class="g-item" aria-label="Foto vergrößern"><div class="ph alt3"><svg class="ph-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.6"/><path d="m3 17 5-4 4 3 3-2 6 4"/></svg><span class="ph-label">Foto 2</span></div></button>
+      <button class="g-item" aria-label="Foto vergrößern"><div class="ph alt2"><svg class="ph-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.6"/><path d="m3 17 5-4 4 3 3-2 6 4"/></svg><span class="ph-label">Foto 3</span></div></button>
+      <button class="g-item" aria-label="Foto vergrößern"><div class="ph alt2"><svg class="ph-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.6"/><path d="m3 17 5-4 4 3 3-2 6 4"/></svg><span class="ph-label">Foto 4</span></div></button>
+      <button class="g-item" aria-label="Foto vergrößern"><div class="ph alt1"><svg class="ph-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.6"/><path d="m3 17 5-4 4 3 3-2 6 4"/></svg><span class="ph-label">Foto 5</span></div></button>
+      <button class="g-item" aria-label="Foto vergrößern"><div class="ph alt3"><svg class="ph-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.6"/><path d="m3 17 5-4 4 3 3-2 6 4"/></svg><span class="ph-label">Foto 6</span></div></button>
+    </div>
+  </div>
+</section>
+
+<div class="balg" aria-hidden="true">
+  <svg viewBox="0 0 1440 18" preserveAspectRatio="none"><path d="M0,18 L48,0 L96,18 L144,0 L192,18 L240,0 L288,18 L336,0 L384,18 L432,0 L480,18 L528,0 L576,18 L624,0 L672,18 L720,0 L768,18 L816,0 L864,18 L912,0 L960,18 L1008,0 L1056,18 L1104,0 L1152,18 L1200,0 L1248,18 L1296,0 L1344,18 L1392,0 L1440,18" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+</div>
+
+<!-- ===================== KONTAKT ===================== -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Kontakt</span>
+      <h2>Magst uns für dein Fest?</h2>
+      <p>Schreib oder ruf einfach an &ndash; wir melden uns verlässlich zurück.</p>
+    </div>
+    <!-- ▼ ECHTE KONTAKTDATEN EINTRAGEN (E-Mail, Telefon) -->
+    <div class="contact-cards reveal">
+      <a class="c-card" href="mailto:kontakt@jauerlinger-bradlmusi.at">
+        <svg class="c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        <div class="c-label">E-Mail</div>
+        <div class="c-val">kontakt@jauerlinger-bradlmusi.at</div>
+      </a>
+      <a class="c-card" href="tel:+430000000000">
+        <svg class="c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L21 13l-1 4a2 2 0 0 1-2 1.5A15 15 0 0 1 4 6 2 2 0 0 1 5 4z"/></svg>
+        <div class="c-label">Telefon</div>
+        <div class="c-val">+43 000 000 000</div>
+      </a>
+      <div class="c-card" style="cursor:default">
+        <svg class="c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <div class="c-label">Region</div>
+        <div class="c-val">Waldviertel / Wachau</div>
+      </div>
+    </div>
+    <p class="contact-note reveal">Wir freuen uns auf deine Anfrage.</p>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="f-brand">Jauerlinger <span>Bradlmusi</span></div>
+    <div class="f-place">Tanzlmusi aus Waldviertel &amp; Wachau</div>
+    <!-- ▼ SOCIAL-LINKS: href ersetzen, oder Zeile löschen wenn nicht vorhanden -->
+    <div class="socials">
+      <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h2.7l.4-3H13V9c0-.9.3-1.5 1.6-1.5H16V4.9c-.3 0-1.2-.1-2.3-.1-2.3 0-3.7 1.3-3.7 3.8V11H7.5v3H10v8h3z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a>
+    </div>
+    <div class="copy">&copy; <span id="year"></span> Jauerlinger Bradlmusi &middot; Mit Herzblut gemacht am Fuße des Jauerlings</div>
+  </div>
+</footer>
+
+<!-- ===================== LIGHTBOX ===================== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Bildansicht">
+  <button class="lb-close" id="lbClose" aria-label="Schließen">&times;</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Vorheriges Bild">&#8249;</button>
+  <div class="lb-stage" id="lbStage"></div>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Nächstes Bild">&#8250;</button>
+</div>
+
+<script>
+  document.documentElement.classList.add('reveal-enabled');
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+    burger.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    burger.setAttribute('aria-expanded', false);
+  }));
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+  }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  const items = Array.from(document.querySelectorAll('.g-item'));
+  const lb = document.getElementById('lightbox');
+  const stage = document.getElementById('lbStage');
+  let idx = 0;
+  function render(i){
+    const inner = items[i].querySelector('img, .ph');
+    stage.innerHTML = '';
+    const clone = inner.cloneNode(true);
+    clone.style.width = '100%'; clone.style.height = '100%';
+    stage.appendChild(clone);
+  }
+  function open(i){ idx = i; render(idx); lb.classList.add('open'); document.body.style.overflow='hidden'; }
+  function close(){ lb.classList.remove('open'); document.body.style.overflow=''; }
+  function step(d){ idx = (idx + d + items.length) % items.length; render(idx); }
+  items.forEach((it,i) => it.addEventListener('click', () => open(i)));
+  document.getElementById('lbClose').addEventListener('click', close);
+  document.getElementById('lbPrev').addEventListener('click', () => step(-1));
+  document.getElementById('lbNext').addEventListener('click', () => step(1));
+  lb.addEventListener('click', e => { if (e.target === lb) close(); });
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowLeft') step(-1);
+    if (e.key === 'ArrowRight') step(1);
+  });
+</script>
+</body>
+</html>
