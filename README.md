@@ -1,5 +1,5 @@
 # website_jbm
-First draft...
-Final release pending...
+First draft..
+Final release pending..
 
 https://eabene.github.io/website_jbm/
